@@ -1,0 +1,1 @@
+# asaidmanfakultesi.github.io
