@@ -3,26 +3,85 @@
 <html lang="az">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fakültə məlumatları</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 36px;
+      background: #f3f7ff;
+      color: #0750b8;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 0 0 24px;
+    }
+
+    .intro {
+      font-size: 20px;
+      margin-bottom: 22px;
+    }
+
+    .document {
+      display: block;
+      background: white;
+      border: 1px solid #cfe0ff;
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 16px;
+      color: #0750b8;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .document:hover {
+      background: #eaf2ff;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 12px;
+      color: #0750b8;
+      font-size: 19px;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 22px; }
+      h1 { font-size: 32px; }
+      .document { font-size: 18px; }
+    }
+  </style>
 </head>
 <body>
+  <main class="container">
 
-  <h1>Fakültə məlumatları</h1>
-  <p>Baxmaq istədiyiniz sənədi seçin:</p>
+    <h1>Fakültə məlumatları</h1>
+    <p class="intro">Baxmaq istədiyiniz sənədi seçin:</p>
 
-  <p>
-    <a href="Fakültə məlumatları/Fakültə məlumatları.docx">
-      Fakültə məlumatları
+    <a class="document"
+       href="Fakültə məlumatları/Fakültə məlumatları.docx">
+      &#9656; Fakültə məlumatları
     </a>
-  </p>
 
-  <p>
-    <a href="Fakültə məlumatları/Fakültə rəhbərliyi.docx">
-      Fakültə rəhbərliyi
+    <a class="document"
+       href="Fakültə məlumatları/Fakültə rəhbərliyi.docx">
+      &#9656; Fakültə rəhbərliyi
     </a>
-  </p>
 
-  <p><a href="index.html">← Ana səhifəyə qayıt</a></p>
+    <a class="back" href="index.html">
+      ← Ana səhifəyə qayıt
+    </a>
 
+  </main>
 </body>
 </html>
