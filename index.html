@@ -73,37 +73,7 @@ a{color:var(--blue);text-decoration:none;cursor:pointer}a:hover{text-decoration:
 Azərbaycan İdman Akademiyası, İdman Fakültəsi, Fətəli xan Xoyski küçəsi 98, Bakı, AZ1072, Azərbaycan<br/>
 Mərtəbə: 3　 |　 Telefon: <a href="tel:+994125647901">(012) 564-79-01</a>　 |　 e-mail: <a href="mailto:idmanfakultesi@sport.edu.az">idmanfakultesi@sport.edu.az</a>
 </div><div class="feedback">▤   <a data-link="" href="#">Tələbə şikayəti və təklif forması</a></div></footer>
-</main>
-<script>
-(function(){
-let editing=false;
-const button=document.getElementById('editBtn');
-button.addEventListener('click',()=>{
- editing=!editing;document.body.classList.toggle('editing',editing);
- button.textContent='Link düzenleme: '+(editing?'Açık':'Kapalı');
- button.classList.toggle('active',editing);
-});
-document.querySelectorAll('a[data-link]').forEach(a=>{
- a.addEventListener('click',e=>{
-  if(editing){
-   e.preventDefault();
-   const label=prompt('Görünen başlık metni:',a.textContent.trim());
-   if(label===null)return;
-   if(label.trim())a.textContent=label.trim();
-   const url=prompt('Bağlantı adresi (https://... veya dosya.pdf):',a.getAttribute('href')==='#'?'':a.getAttribute('href'));
-   if(url!==null)a.setAttribute('href',url.trim()||'#');
-  }else if(a.getAttribute('href')==='#'){e.preventDefault();alert('Bu başlık için henüz bağlantı eklenmedi. Link düzenlemeyi açın.');}
- });
-});
-document.getElementById('saveBtn').addEventListener('click',()=>{
- const clone=document.documentElement.cloneNode(true);
- clone.querySelector('body').classList.remove('editing');
- const toolbar=clone.querySelector('#toolbar');if(toolbar)toolbar.remove();
- const blob=new Blob(['<!doctype html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'});
- const url=URL.createObjectURL(blob);const a=document.createElement('a');
- a.href=url;a.download='idman_fakultesi_linkli_sayfa.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);
-});
-})();
+</main> 
 </script></div><script>
 (function(){
  const root=document.getElementById('faculty-scaled-page');
