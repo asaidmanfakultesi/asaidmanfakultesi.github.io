@@ -123,6 +123,12 @@ a{color:var(--blue);text-decoration:none;cursor:pointer}a:hover{text-decoration:
   .cards .panel {
     min-height: 0 !important;
   }
+}  
+/* Linkler kutusundaki yazilar kesilmesin */
+@media (min-width: 851px) {
+  .cards .right {
+    grid-template-rows: minmax(225px, auto) auto auto !important;
+  }
 }
 </style><style>
 .academy-brand-strip{height:110px;display:flex;align-items:center;justify-content:space-between;padding:10px 45px;background:linear-gradient(90deg,#f3fbf6 0%,#ffffff 70%);border-bottom:4px solid #299b61;box-sizing:border-box}
