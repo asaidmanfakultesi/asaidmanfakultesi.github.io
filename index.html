@@ -76,7 +76,22 @@ a{color:var(--blue);text-decoration:none;cursor:pointer}a:hover{text-decoration:
     white-space: nowrap;
   }
 }
+/* Ana sayfadaki kutulari daha kisa yap */
+@media (min-width: 851px) {
+  .cards {
+    height: 440px !important;
+    min-height: 0 !important;
+  }
 
+  .left,
+  .middle,
+  .right {
+    min-height: 0 !important;
+  }
+  .panel {
+    min-height: 0 !important;
+  }
+}
 </style><style>
 .academy-brand-strip{height:110px;display:flex;align-items:center;justify-content:space-between;padding:10px 45px;background:linear-gradient(90deg,#f3fbf6 0%,#ffffff 70%);border-bottom:4px solid #299b61;box-sizing:border-box}
 .academy-brand-strip img{width:175px;height:90px;object-fit:contain;object-position:left center}
