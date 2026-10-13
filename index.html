@@ -40,6 +40,34 @@ a{color:var(--blue);text-decoration:none;cursor:pointer}a:hover{text-decoration:
   .hero{height:466px !important}
   .wrap{max-width:1536px}
 }
+/* Alt adres ve form duzeni */
+@media (min-width: 851px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 20px;
+  }
+
+  .footer .address {
+    flex: 0 0 100%;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1.5;
+  }
+
+  .footer .feedback {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 0;
+    border-left: 0;
+    padding: 4px 0;
+    text-align: center;
+  }
+}
 </style><style>
 .academy-brand-strip{height:110px;display:flex;align-items:center;justify-content:space-between;padding:10px 45px;background:linear-gradient(90deg,#f3fbf6 0%,#ffffff 70%);border-bottom:4px solid #299b61;box-sizing:border-box}
 .academy-brand-strip img{width:175px;height:90px;object-fit:contain;object-position:left center}
