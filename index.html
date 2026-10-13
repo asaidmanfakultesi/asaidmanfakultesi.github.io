@@ -82,13 +82,45 @@ a{color:var(--blue);text-decoration:none;cursor:pointer}a:hover{text-decoration:
     height: 440px !important;
     min-height: 0 !important;
   }
-
   .left,
   .middle,
   .right {
     min-height: 0 !important;
   }
   .panel {
+    min-height: 0 !important;
+  }
+}
+  
+/* Adresi konum isaretinin yanina getir */
+@media (min-width: 851px) {
+  .footer {
+    justify-content: flex-start !important;
+    gap: 12px !important;
+  }
+  .footer .pin {
+    flex: 0 0 auto !important;
+  }
+  .footer .address {
+    flex: 1 1 auto !important;
+    text-align: left !important;
+    min-width: 0 !important;
+  }
+  .footer .feedback {
+    flex: 0 0 auto !important;
+    margin-left: auto !important;
+  }
+
+  /* Uc sutunlu kutularin yuksekligini azalt */
+  .cards {
+    height: 360px !important;
+    min-height: 0 !important;
+  }
+
+  .cards .left,
+  .cards .middle,
+  .cards .right,
+  .cards .panel {
     min-height: 0 !important;
   }
 }
